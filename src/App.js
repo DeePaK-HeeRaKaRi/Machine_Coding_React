@@ -11,6 +11,8 @@ import TransferListAppModified from './transfer-list/TransferListAppModified';
 import CountryCapitalGame from './CountryCapitalGame/CountryCapitalGame';
 import MultiSelectInput from './MultiSelectInput/MultiSelectInput';
 import UseMemoHook from './Polyfill - useMemo/UseMemoHook';
+import VirtualListApp from './VirtualizedLists/VirtualListApp';
+import MultiTabsFormApp from './MultiTabsForm/MultiTabsFormApp';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path='/CountryCapitalGame' element={<CountryCapitalGame />}/>
         <Route path='/MultiSelectInput' element={<MultiSelectInput />} />
         <Route path='/UseMemoPolyfill' element={<UseMemoHook />} />
+        <Route path='/virtualList' element={<VirtualListApp />} />
+        <Route path='/multitabsForm' element={<MultiTabsFormApp />}/>
       </Routes>
     </div>
   );

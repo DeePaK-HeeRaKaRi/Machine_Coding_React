@@ -1,0 +1,21 @@
+
+.tabNavigation_Container {
+    width: 1000px;
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;
+}
+
+.tab {
+    width: 35%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+    cursor: pointer;
+}
+
+.active-tab {
+    background-color: lightcoral;
+}
