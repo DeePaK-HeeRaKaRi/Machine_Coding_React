@@ -13,6 +13,7 @@ import MultiSelectInput from './MultiSelectInput/MultiSelectInput';
 import UseMemoHook from './Polyfill - useMemo/UseMemoHook';
 import VirtualListApp from './VirtualizedLists/VirtualListApp';
 import MultiTabsFormApp from './MultiTabsForm/MultiTabsFormApp';
+import InteractiveShape from './GridLights/InteractiveShape';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/UseMemoPolyfill' element={<UseMemoHook />} />
         <Route path='/virtualList' element={<VirtualListApp />} />
         <Route path='/multitabsForm' element={<MultiTabsFormApp />}/>
+        <Route path='/gridlights' element={<InteractiveShape />}/>
       </Routes>
     </div>
   );
