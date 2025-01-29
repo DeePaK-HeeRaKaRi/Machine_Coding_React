@@ -14,12 +14,13 @@ import UseMemoHook from './Polyfill - useMemo/UseMemoHook';
 import VirtualListApp from './VirtualizedLists/VirtualListApp';
 import MultiTabsFormApp from './MultiTabsForm/MultiTabsFormApp';
 import InteractiveShape from './GridLights/InteractiveShape';
+import ProgressBarForm from './ProgressBarForm/ProgressBarForm';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/matrix-Boxes" element={<ColorChange />}></Route>
+        <Route path="/ColorChange" element={<ColorChange />}></Route>
         <Route path="/autocomplete-typehead" element={<AutoComplete />}></Route>
         <Route path="/stepper" element={<Stepper />}></Route>
         <Route path="/tabs" element={<TabApp />}/>
@@ -32,6 +33,7 @@ function App() {
         <Route path='/virtualList' element={<VirtualListApp />} />
         <Route path='/multitabsForm' element={<MultiTabsFormApp />}/>
         <Route path='/gridlights' element={<InteractiveShape />}/>
+        <Route path='/progressbarform' element={<ProgressBarForm />}/>
       </Routes>
     </div>
   );

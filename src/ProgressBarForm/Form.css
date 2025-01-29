@@ -1,0 +1,37 @@
+
+.input-field-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 40px;
+    box-sizing: border-box;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+
+.input-field input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-field label {
+    font-size: 16px; /* Adjust for readability */
+    margin-bottom: 5px; /* Add space below the label */
+}
+
+
+
+@media(max-width : 768px) {
+    .input-field-container {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: 1fr;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+}
